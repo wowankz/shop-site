@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/news.css" />
+
+		<title>Статьи</title>
+	</head>
+	<body>
+		<!-- Header  -->
+		<header class="header center">
+			<div class="header-left">
+				<label for="burger" class="burger-menu">
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+				</label>
+				<input type="radio" name="burger" id="burger" />
+				<nav class="header-nav">
+					<label class="burger-close" for="burger-close"></label>
+					<a href="catalog.html" class="header-nav__link">Каталог товаров</a>
+					<a href="#" class="header-nav__link">Доставка и оплата</a>
+					<a href="#" class="header-nav__link">Контакты</a>
+					<a href="#" class="header-nav__link">Статьи</a>
+					<a href="news.html" class="header-nav__link">Новости</a>
+				</nav>
+			</div>
+			<div class="header-right">
+				<input type="radio" name="burger" id="burger-close" checked />
+				<div class="header-contact">
+					<div class="header-phone">
+						<p class="header-phone__label">Телефон:</p>
+						<p class="header-phone__number">8 (912) 123-45-67</p>
+					</div>
+					<div class="header-email">
+						<p class="header-email__label">Почта:</p>
+						<p class="header-email__number">info@gmail.com</p>
+					</div>
+					<button class="header-call">Обратный звонок</button>
+				</div>
+
+				<a href="basket.html" class="header-cart" data-amount="3">
+					<img src="img/cart.png" alt="cart" class="header-cart__img" />
+				</a>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="main center">
+			<h1 class="main-title">Статьи</h1>
+			<div class="filter">
+				<div class="nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item_active">
+							<a href="#" class="nav__link">Все</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Техника</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Новые поступления</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Обзоры</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sort">
+					<span class="sort__label">Сортировка:</span>
+					<input hidden type="checkbox" name="sort" id="sort" />
+					<label class="sort__name" for="sort">По дате выхода</label>
+				</div>
+			</div>
+			<div class="news center">
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news1.jpg" alt="img_news"></img>
+					<span class="news-card__date">26.12.2020</span>
+					<h2 class="news-card__title">Сервисное обслуживание</h2>
+					<p class="news-card__desc">
+						Первоклассный сервис: Квалифицированный персонал и современное оснащение наших сервисных центров гарантируют оперативную поддержку заказчиков даже в самых удалённых ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news2.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Канатный экскаватор HS 8300</h2>
+					<p class="news-card__desc">
+						HS 8300 представляет собой высокопроизводительный канатно-ковшовый экскаватор эксплуатационной массой 380 тонн. Надежные и унифицированные компоненты ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news3.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Карьерные самосвалы которые ездят по углю с большими колёсами</h2>
+					<p class="news-card__desc">
+						Особенности конструкции карьерных самосвалов, или землевозов, позволяют достичь максимального уровня грузоподъемности и ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news1.jpg" alt="img_news"></img>
+					<span class="news-card__date">26.12.2020</span>
+					<h2 class="news-card__title">Сервисное обслуживание</h2>
+					<p class="news-card__desc">
+						Первоклассный сервис: Квалифицированный персонал и современное оснащение наших сервисных центров гарантируют оперативную поддержку заказчиков даже в самых удалённых ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news2.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Канатный экскаватор HS 8300</h2>
+					<p class="news-card__desc">
+						HS 8300 представляет собой высокопроизводительный канатно-ковшовый экскаватор эксплуатационной массой 380 тонн. Надежные и унифицированные компоненты ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news3.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Карьерные самосвалы которые ездят по углю с большими колёсами</h2>
+					<p class="news-card__desc">
+						Особенности конструкции карьерных самосвалов, или землевозов, позволяют достичь максимального уровня грузоподъемности и ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news1.jpg" alt="img_news"></img>
+					<span class="news-card__date">26.12.2020</span>
+					<h2 class="news-card__title">Сервисное обслуживание</h2>
+					<p class="news-card__desc">
+						Первоклассный сервис: Квалифицированный персонал и современное оснащение наших сервисных центров гарантируют оперативную поддержку заказчиков даже в самых удалённых ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news2.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Канатный экскаватор HS 8300</h2>
+					<p class="news-card__desc">
+						HS 8300 представляет собой высокопроизводительный канатно-ковшовый экскаватор эксплуатационной массой 380 тонн. Надежные и унифицированные компоненты ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+				<article class="news-card">
+					<img class="news-card__img" src="./img/news3.jpg" alt="img_news"></img>
+					<span class="news-card__date">29.12.2020</span>
+					<h2 class="news-card__title">Карьерные самосвалы которые ездят по углю с большими колёсами</h2>
+					<p class="news-card__desc">
+						Особенности конструкции карьерных самосвалов, или землевозов, позволяют достичь максимального уровня грузоподъемности и ...
+					</p>
+					<a href="#" class="news-card__link">Перейти к статье</a>
+				</article>
+			</div>
+			<div class="pagination center">
+				<ul class="pagination-list">
+					<li class="pagination-item"><a href="#" class="pagination-link pagination-link__btn-back"></a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link pagination-link_active">2</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">6</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link pagination-link__btn-next">Следущая</a></li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- Partners -->
+		<div class="partners center">
+			<h2 class="partners-title">
+				Сайты наших партнёров <br />
+				по запчастям для спецтехники
+			</h2>
+			<div class="partners-content">
+				<a href="#" class="partners-item partners-item_pink">
+					<img src="img/hydro_pump_full.png" alt="pump" class="partners-img" />
+					<div class="partners-text">Гидронасосы <br />и гидромоторы PSM</div>
+					<button class="partners-button"></button>
+				</a>
+				<a href="#" class="partners-item partners-item_green">
+					<img src="img/generator_full.png" alt="generator" class="partners-img" />
+					<div class="partners-text">Генераторы<br />для спецтехники</div>
+					<button class="partners-button"></button>
+				</a>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-content center">
+				<ul class="footer-nav">
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+				</ul>
+				<div class="footer-contact">
+					<div class="footer-contact__phone">
+						<p class="footer-contact__phone-label">Телефон:</p>
+						<p class="footer-contact__phone-number">8 (912) 123-45-67</p>
+					</div>
+					<div class="footer-contact__email">
+						<p class="footer-contact__email-label">Почта:</p>
+						<p class="footer-contact__email-address">info@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">«Название компании». 2020 Все права защищены.</div>
+		</footer>
+
+		<script>
+			const mediaQuery = window.matchMedia('(min-width: 991px)');
+			const inputBurger = document.getElementById('burger');
+
+			function closeBurgerMenu(e) {
+				if (e.matches) {
+					console.log('Media Query Matched!');
+					inputBurger.checked = false;
+				}
+			}
+
+			mediaQuery.addListener(closeBurgerMenu);
+			closeBurgerMenu(mediaQuery);
+		</script>
+	</body>
+</html>

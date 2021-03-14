@@ -1,0 +1,73 @@
+@import url('../fonts/Circe/stylesheet.css') ;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Circe' ;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+}
+
+.center {
+	padding-right: calc((100% - 1180px) / 2);
+	padding-left: calc((100% - 1180px) / 2);
+	@media (max-width: 1180px) {
+		padding-right: calc((100% - 960px) / 2);
+		padding-left: calc((100% - 960px) / 2);
+	}
+	@media (max-width: 991.98px) {
+		// padding-right: calc((100% - 745px) / 2);
+		// padding-left: calc((100% - 745px) / 2);
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	@media (max-width: 774.98px) {
+		// padding-right: calc((100% - 545px) / 2);
+		// padding-left: calc((100% - 545px) / 2);
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	@media (max-width: 575.98px) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.button-all {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #ffffff;
+	border: 1px solid #ffbb32;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #222222;
+	padding: 10px 20px;
+	&::after {
+		content: url(../img/svg/arrow_right.svg);
+		width: 5px;
+		height: 5px;
+		margin-left: 5px;
+	}
+}
+
+@import 'header';
+@import 'search';
+@import 'bredcrumbs';
+@import 'catalog-main';
+@import 'partners';
+@import 'footer';
+
+.partners{
+	background: #F3F7FA;
+}

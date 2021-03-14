@@ -1,0 +1,41 @@
+.advantage {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	@media (max-width: 991.98px) {
+		flex-wrap: wrap;
+	}
+}
+
+.advantage-card {
+	width: 280px;
+	height: 170px;
+	background: #f3f7fa;
+	border-radius: 12px;
+	padding: 31px 17px;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+	@media (max-width: 991.98px) {
+		flex-basis: 49%;
+		margin-bottom: 15px;
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+	}
+	@media (max-width: 775px) {
+		flex-basis: 100%;
+	}
+}
+.advantage-icon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.advantsge-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #111111;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<title>Главная</title>
+	</head>
+	<body>
+		<!-- Header  -->
+		<header class="header center">
+			
+			<div class="header-left">
+				<label for="burger" class="burger-menu">
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+				</label>
+				<input type="radio" name="burger" id="burger">
+				<nav class="header-nav">
+					<label class="burger-close" for="burger-close"></label>
+					<a href="catalog.html" class="header-nav__link">Каталог товаров</a>
+					<a href="#" class="header-nav__link">Доставка и оплата</a>
+					<a href="#" class="header-nav__link">Контакты</a>
+					<a href="articles.html" class="header-nav__link">Статьи</a>
+					<a href="news.html" class="header-nav__link">Новости</a>
+				</nav>
+			</div>
+			<div class="header-right">
+				<input type="radio" name="burger" id="burger-close" checked>
+				<div class="header-contact">
+					<div class="header-phone">
+						<p class="header-phone__label">Телефон:</p>
+						<p class="header-phone__number">8 (912) 123-45-67</p>
+					</div>
+					<div class="header-email">
+						<p class="header-email__label">Почта:</p>
+						<p class="header-email__number">info@gmail.com</p>
+					</div>
+					<button class="header-call">Обратный звонок</button>
+				</div>
+				
+				<a href="basket.html" class="header-cart" data-amount="3">
+					<img src="img/cart.png" alt="cart" class="header-cart__img" />
+				</a>
+			</div>
+		</header>
+
+		<!-- Search  -->
+		<div class="search center">
+			<h1 class="heading">Стартеры для спецтехники</h1>
+			<p class="search-label">Введите каталожный номер стартера или название техники на которой он применяется</p>
+			<form action="search.html" class="search-form">
+				<input
+					class="search-form__input"
+					type="text"
+					name="search"
+					id="search"
+					placeholder="Введите каталожный номер VOE11423474 или L180F"
+				/>
+				<button type="submit" class="search-form__button">Поиск</button>
+			</form>
+		</div>
+
+		<!-- Baner -->
+		<div class="banner center">
+			<div class="banner-wrap">
+				<img class="banner-img" src="./img/b_slide1.png" alt="banner" />
+				<div class="banner-text">
+					<h2 class="banner-title">Доставку осуществляем транспортными компаниями по выбору клиента</h2>
+					<p class="banner-desc">Отправляем по всей России и странам СНГ</p>
+				</div>
+
+				<div class="banner-button">
+					<button class="banner-button__prev"></button>
+					<span class="banner-circle banner-circle_active"></span>
+					<span class="banner-circle"></span>
+					<span class="banner-circle"></span>
+					<button class="banner-button__next"></button>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<main>
+			<!-- Advantages -->
+			<div class="advantage center">
+				<div class="advantage-card">
+					<svg class="advantage-icon">
+						<use xlink:href="img/svg/low_price.svg#price" />
+					</svg>
+					<p class="advantsge-text">
+						Одни из самых низких цен<br />
+						по России и СНГ
+					</p>
+				</div>
+				<div class="advantage-card">
+					<svg class="advantage-icon">
+						<use xlink:href="img/svg/delivery.svg#delivery" />
+					</svg>
+					<p class="advantsge-text">Доставка до транспортной компании бесплатно</p>
+				</div>
+				<div class="advantage-card">
+					<svg class="advantage-icon">
+						<use xlink:href="img/svg/assurance.svg#assurance" />
+					</svg>
+					<p class="advantsge-text">
+						Даём гарантию на товар<br />
+						в течние 4 месяцев
+					</p>
+				</div>
+				<div class="advantage-card">
+					<svg class="advantage-icon">
+						<use xlink:href="img/svg/tax.svg#tax" />
+					</svg>
+					<p class="advantsge-text">В цену включён налог на добавленную стоимость (НДС)</p>
+				</div>
+			</div>
+
+			<!-- News -->
+			<div class="news center">
+				<div class="news-header">
+					<h2 class="news-title">Новости</h2>
+					<a href="news.html" class="button-all">Все новости</a>
+				</div>
+				<div class="news-body">
+					<article class="news-article">
+						<img src="img/news_tesla_technics_min.jpg" alt="tesla_technics" class="news-article__img" />
+						<div class="news-article__date">18 сентября 2020</div>
+						<h1 class="news-article__title">Новое поступление стартеров Tesla Technics</h1>
+						<div class="news-article__text">
+							<p>
+								Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем
+								массового участия. Значимость этих ...
+							</p>
+						</div>
+					</article>
+					<article class="news-article">
+						<img src="img/news_tesla_technics_min.jpg" alt="tesla_technics" class="news-article__img" />
+						<div class="news-article__date">24 октября 2020</div>
+						<h1 class="news-article__title">
+							Как подобрать стартер для бульдозеров Volvo, Hitachi, Doosan и другой спецтехники
+						</h1>
+						<div class="news-article__text">
+							<p>
+								Таким образом сложившаяся структура организации влечет за собой процесс внедрения ...
+							</p>
+						</div>
+					</article>
+					<article class="news-article">
+						<img src="img/news_tesla_technics2_min.jpg" alt="tesla_technics" class="news-article__img" />
+						<div class="news-article__date">15 ноября 2020</div>
+						<h1 class="news-article__title">Новое поступление стартеров Tesla Technics</h1>
+						<div class="news-article__text">
+							<p>
+								Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем
+								массового участия. Значимость этих ...
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<!-- Article -->
+			<div class="articles center">
+				<div class="articles-header">
+					<h2 class="articles-title">Статьи</h2>
+					<a href="articles.html" class="button-all">Все статьи</a>
+				</div>
+				<div class="articles-body">
+					<div class="articles-body__left">
+						<article class="article-big">
+							<img src="img/article_starter.jpg" alt="article_starter" class="article-big__img">
+							<div>
+								<div class="article-big__date">15 ноября 2020</div>
+								<h1 class="article-big__title">
+									Как подобрать стартер для бульдозеров Volvo, Hitachi, Doosan и другой спецтехники
+								</h1>
+								<div class="article-big__text">
+									<p>
+										Таким образом сложившаяся структура организации влечет за собой процесс 
+										внедрения и модернизации систем массового участия. Значимость этих ...
+									</p>
+								</div>
+							</div>
+							
+						</article>
+					</div>
+					<div class="articles-body__right">
+						<article class="article-small">
+							<img src="img/article_starter2.jpg" alt="article_starter2" class="article-small__img">
+							<div class="article-small__body">
+								<div class="article-small__date">08 ноября 2020</div>
+							<h1 class="article-small__title">
+								Как подобрать стартер для бульдозеров Volvo, Hitachi, Doosan и другой спецтехники
+							</h1>
+							<div class="article-small__text">
+								<p>
+									Таким образом сложившаяся структура организации влечет за собой процесс внедрения ...
+								</p>
+							</div>
+						</article>
+
+						<div class="article-small__horizontal-hr"></div>
+
+						<article class="article-small">
+							<img src="img/article_starter2.jpg" alt="article_starter2" class="article-small__img">
+							<div class="article-small__body">
+								<div class="article-small__date">24 октября 2020</div>
+							<h1 class="article-small__title">
+								Новое поступление стартеров Tesla Technics
+							</h1>
+							<div class="article-small__text">
+								<p>
+									Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Значимость этих ...
+								</p>
+							</div>
+						</article>
+
+						<article class="article-small">
+							<img src="img/article_starter2.jpg" alt="article_starter2" class="article-small__img">
+							<div class="article-small__body">
+								<div class="article-small__date">18 сентября 2020</div>
+							<h1 class="article-small__title">
+								Новая модель организационной деятельности позволяет оценить значение существенных ...
+							</h1>
+							<div class="article-small__text">
+								<p>
+									Таким образом сложившаяся структура организации влечет за собой процесс внедрения ...
+								</p>
+							</div>
+						</article>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Partners -->
+		<div class="partners center">
+			<h2 class="partners-title">
+				Сайты наших партнёров <br>
+				по запчастям для спецтехники
+			</h2>
+			<div class="partners-content">
+				<a href="#" class="partners-item partners-item_pink">
+					<img src="img/hydro_pump_full.png" alt="pump" class="partners-img">
+					<div class="partners-text">
+						Гидронасосы <br>и гидромоторы PSM
+					</div>
+					<button  class="partners-button"></button>
+				</a>
+				<a href="#" class="partners-item partners-item_green">
+					<img src="img/generator_full.png" alt="generator" class="partners-img">
+					<div class="partners-text">
+						Генераторы<br>для спецтехники
+					</div>
+					<button  class="partners-button"></button>
+				</a>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer ">
+			<div class="footer-content center">
+				<ul class="footer-nav">
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+				</ul>
+				<div class="footer-contact">
+					<div class="footer-contact__phone">
+						<p class="footer-contact__phone-label">Телефон:</p>
+						<p class="footer-contact__phone-number">8 (912) 123-45-67</p>
+					</div>
+					<div class="footer-contact__email">
+						<p class="footer-contact__email-label">Почта:</p>
+						<p class="footer-contact__email-address">info@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">«Название компании». 2020 Все права защищены.</div>
+		</footer>
+
+		<script>
+			const mediaQuery = window.matchMedia('(min-width: 991px)');
+			const inputBurger = document.getElementById('burger');
+
+			function closeBurgerMenu(e) {
+			if (e.matches) {
+				console.log('Media Query Matched!');
+				inputBurger.checked = false;
+			}
+			}
+
+			mediaQuery.addListener(closeBurgerMenu);
+			closeBurgerMenu(mediaQuery);
+		</script>
+	</body>
+</html>

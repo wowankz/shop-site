@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/basket.css" />
+
+		<title>Корзина</title>
+	</head>
+	<body>
+		<!-- Header  -->
+		<header class="header center">
+			<div class="header-left">
+				<label for="burger" class="burger-menu">
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+				</label>
+				<input type="radio" name="burger" id="burger" />
+				<nav class="header-nav">
+					<label class="burger-close" for="burger-close"></label>
+					<a href="catalog.html" class="header-nav__link">Каталог товаров</a>
+					<a href="#" class="header-nav__link">Доставка и оплата</a>
+					<a href="#" class="header-nav__link">Контакты</a>
+					<a href="articles.html" class="header-nav__link">Статьи</a>
+					<a href="news.html" class="header-nav__link">Новости</a>
+				</nav>
+			</div>
+			<div class="header-right">
+				<input type="radio" name="burger" id="burger-close" checked />
+				<div class="header-contact">
+					<div class="header-phone">
+						<p class="header-phone__label">Телефон:</p>
+						<p class="header-phone__number">8 (912) 123-45-67</p>
+					</div>
+					<div class="header-email">
+						<p class="header-email__label">Почта:</p>
+						<p class="header-email__number">info@gmail.com</p>
+					</div>
+					<button class="header-call">Обратный звонок</button>
+				</div>
+
+				<a href="#" class="header-cart" data-amount="3">
+					<img src="img/cart.png" alt="cart" class="header-cart__img" />
+				</a>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="main center">
+			<h1 class="main-title">Корзина</h1>
+			<div class="basket">
+				<div class="basket-header">
+					<span class="basket-header__title">Фото</span>
+					<span class="basket-header__title">Товар</span>
+					<span class="basket-header__title">Цена за 1 шт.</span>
+					<span class="basket-header__title">Количество шт.</span>
+					<span class="basket-header__title">Сумма</span>
+					<span class="basket-header__title"> </span>
+				</div>
+				<div class="basket-body">
+					<div class="basket-body__item">
+						<img class="basket-body__img" src="./img/product-basket-img.png" alt="product1" />
+						<div class="basket-body__info">
+							<h2 class="basket-body__info-title">Стартер 2873К404</h2>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Масса:</span>
+								<span class="basket-body__prop-value">4 кг</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Напряжение:</span>
+								<span class="basket-body__prop-value">12 v</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Мощность:</span>
+								<span class="basket-body__prop-value">3 kw</span>
+							</div>
+						</div>
+						<div class="basket-body__price">28 900<small>₽</small></div>
+						<div class="basket-body__amount">
+							<span class="basket-body__amount-minus"></span>
+							<span class="basket-body__amount-value">4</span>
+							<span class="basket-body__amount-plus"></span>
+						</div>
+						<div class="basket-body__price-sum">115 600<small>₽</small></div>
+						<img src="./img/basket_del_product.png" alt="del" class="basket-body__btn-del" />
+					</div>
+
+					<div class="basket-body__item">
+						<img class="basket-body__img" src="./img/product-basket-img.png" alt="product1" />
+						<div class="basket-body__info">
+							<h2 class="basket-body__info-title">Стартер 2873К404</h2>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Масса:</span>
+								<span class="basket-body__prop-value">4 кг</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Напряжение:</span>
+								<span class="basket-body__prop-value">12 v</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Мощность:</span>
+								<span class="basket-body__prop-value">3 kw</span>
+							</div>
+						</div>
+						<div class="basket-body__price">28 900<small>₽</small></div>
+						<div class="basket-body__amount">
+							<span class="basket-body__amount-minus basket-body__amount-minus_disabled"></span>
+							<span class="basket-body__amount-value">1</span>
+							<span class="basket-body__amount-plus"></span>
+						</div>
+						<div class="basket-body__price-sum">28 900<small>₽</small></div>
+						<img src="./img/basket_del_product.png" alt="del" class="basket-body__btn-del" />
+					</div>
+
+					<div class="basket-body__item">
+						<img class="basket-body__img" src="./img/product-basket-img.png" alt="product1" />
+						<div class="basket-body__info">
+							<h2 class="basket-body__info-title">Стартер 2873К404</h2>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Масса:</span>
+								<span class="basket-body__prop-value">4 кг</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Напряжение:</span>
+								<span class="basket-body__prop-value">12 v</span>
+							</div>
+							<div class="basket-body-prop">
+								<span class="basket-body__prop-name">Мощность:</span>
+								<span class="basket-body__prop-value">3 kw</span>
+							</div>
+						</div>
+						<div class="basket-body__price">28 900<small>₽</small></div>
+						<div class="basket-body__amount">
+							<span class="basket-body__amount-minus"></span>
+							<span class="basket-body__amount-value">4</span>
+							<span class="basket-body__amount-plus"></span>
+						</div>
+						<div class="basket-body__price-sum">115 600<small>₽</small></div>
+						<img src="./img/basket_del_product.png" alt="del" class="basket-body__btn-del" />
+					</div>
+				</div>
+				<div class="basket-total">
+					<div class="basket-total__text">
+						<span class="basket-total__name">Итого:</span>
+						<span class="basket-total__sum">260 100 <small>₽</small></span>
+					</div>
+				</div>
+			</div>
+
+			<form class="order">
+				<h3 class="order-title">Оформление заказа</h3>
+				<div class="order-hr"></div>
+
+				<div class="order-user">
+					<div class="order-user__info">
+						<img class="order-user__info-img" src="./img/user.png" alt="user" />
+						<div class="order-user__info-title">Данные покупателя</div>
+					</div>
+					<div class="order-user__data">
+						<label class="order-user__data-label" for="name-user">ФИО или название организации</label>
+						<input
+							class="order-user__data-input"
+							type="text"
+							name="name_user"
+							id="name-user"
+							placeholder="Панасюк Николай Петрович"
+						/>
+
+						<label class="order-user__data-label" for="phone-user">Контактный номер телефона *</label>
+						<input
+							class="order-user__data-input"
+							type="tel"
+							name="phone_user"
+							id="phone-user"
+							placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+						/>
+
+						<label class="order-user__data-label" for="email-user">Электронная почта</label>
+						<input class="order-user__data-input" type="email" name="email_user" id="email-user" placeholder="E-mail" />
+
+						<div class="order-user__data-required"><span>*</span> - обязательные для заполнения поля</div>
+					</div>
+				</div>
+
+				<div class="order-hr"></div>
+
+				<div class="bank-details">
+					<div class="bank-details__info">
+						<img class="bank-details__info-img" src="./img/bank-details.png" alt="user" />
+						<div class="bank-details__info-title">Способ оплаты</div>
+					</div>
+					<div class="bank-details__data">
+						<input class="type-input" hidden type="checkbox" name="type_pay" id="type-pay" />
+						<label class="type-pay" for="type-pay">
+							<span class="type-pay__bank">По счёту компании</span>
+							<span class="type-pay__switch"></span>
+							<span class="type-pay__card">По номеру карты</span>
+						</label>
+						<div class="bank-details__data-top">
+							<div class="">
+								<label class="bank-details__data-label" for="iin">ИНН компании</label>
+								<input class="bank-details__data-input" type="text" name="iin" id="iin" placeholder="6678069177" />
+							</div>
+							<div class="">
+								<label class="bank-details__data-label" for="kpp">КПП компании</label>
+								<input class="bank-details__data-input" type="text" name="kpp" id="kpp" placeholder="6678069177" />
+							</div>
+						</div>
+						<label class="bank-details__data-label" for="email-user">Электронная почта</label>
+						<input class="bank-details__data-input" type="email" name="email_user" id="email-user" placeholder="E-mail" />
+
+						<div class="bank-details__bank">
+							<p class="bank-details__bank-title">Банковские реквизиты</p>
+							<label class="bank-details__data-label" for="bik">Бик</label>
+							<input class="bank-details__data-input" type="text" name="bik" id="bik" placeholder="046577795" />
+
+							<label class="bank-details__data-label" for="acount">Расчётный счёт</label>
+							<input class="bank-details__data-input" type="text" name="acount" id="acount" placeholder="40702810962390000468" />
+
+							<label class="bank-details__data-label" for="address">Юридический адрес</label>
+							<textarea
+								class="bank-details__data-input"
+								name="address"
+								id="address"
+								placeholder="620016, Свердловская обл., г. Екатеринбург, ул. Вильгельма де Геннина, д. 47, кв. 173"
+							></textarea>
+						</div>
+
+						<div class="bank-details__card">
+							<p class="bank-details__card-title">Данные карты</p>
+
+							<label class="bank-details__data-label" for="number-card">Номер карты</label>
+							<input
+								class="bank-details__data-input"
+								type="text"
+								name="number_card"
+								id="namber-card"
+								placeholder="4598 3258 9657 1452"
+							/>
+
+							<label class="bank-details__data-label" for="card-holders">Владелец карты</label>
+							<input
+								class="bank-details__data-input"
+								type="text"
+								name="card_holders"
+								id="card-holders"
+								placeholder="PANASUK NIKOLAI"
+							/>
+
+							<div class="bank-details__card-data">
+								<div class="bank-details__card-date">
+									<label class="bank-details__data-label">Срок действия карты</label>
+									<div class="bank-details__period">
+										<input class="bank-details__data-input" type="text" name="month" placeholder="09" />
+										<input class="bank-details__data-input" type="text" name="year" placeholder="2021" />
+									</div>
+								</div>
+								<div class="bank-details__card-cvv">
+									<label class="bank-details__data-label">CVV - номер</label>
+									<input class="bank-details__data-input" type="password" name="cvv" placeholder="123" />
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="bank-details__button-check">Оформить заказ</button>
+
+						<div class="bank-details__policy">
+							<input class="bank-details__policy-check" type="checkbox" name="policy" id="policy" />
+							<span class="bank-details__policy-text"
+								>Отправляя данные, вы соглашаетесь
+								<a class="bank-details__policy-link" href="#">с политикой конфиденциальности</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<!-- Partners -->
+		<div class="partners center">
+			<h2 class="partners-title">
+				Сайты наших партнёров <br />
+				по запчастям для спецтехники
+			</h2>
+			<div class="partners-content">
+				<a href="#" class="partners-item partners-item_pink">
+					<img src="img/hydro_pump_full.png" alt="pump" class="partners-img" />
+					<div class="partners-text">Гидронасосы <br />и гидромоторы PSM</div>
+					<button class="partners-button"></button>
+				</a>
+				<a href="#" class="partners-item partners-item_green">
+					<img src="img/generator_full.png" alt="generator" class="partners-img" />
+					<div class="partners-text">Генераторы<br />для спецтехники</div>
+					<button class="partners-button"></button>
+				</a>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-content center">
+				<ul class="footer-nav">
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+				</ul>
+				<div class="footer-contact">
+					<div class="footer-contact__phone">
+						<p class="footer-contact__phone-label">Телефон:</p>
+						<p class="footer-contact__phone-number">8 (912) 123-45-67</p>
+					</div>
+					<div class="footer-contact__email">
+						<p class="footer-contact__email-label">Почта:</p>
+						<p class="footer-contact__email-address">info@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">«Название компании». 2020 Все права защищены.</div>
+		</footer>
+
+		<script>
+			const mediaQuery = window.matchMedia('(min-width: 991px)');
+			const inputBurger = document.getElementById('burger');
+
+			function closeBurgerMenu(e) {
+				if (e.matches) {
+					console.log('Media Query Matched!');
+					inputBurger.checked = false;
+				}
+			}
+
+			mediaQuery.addListener(closeBurgerMenu);
+			closeBurgerMenu(mediaQuery);
+		</script>
+	</body>
+</html>
