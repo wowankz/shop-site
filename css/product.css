@@ -1362,7 +1362,7 @@ input[name='tab'] {
   width: 0;
   height: 0;
   position: absolute;
-  left: 9999px;
+  left: -9999px;
 }
 
 input[name='tab']:checked + .product-info__tab-content {
