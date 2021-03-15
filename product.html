@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/product.css" />
+
+		<title>Главная</title>
+	</head>
+	<body>
+		<!-- Header  -->
+		<header class="header center">
+			<div class="header-left">
+				<label for="burger" class="burger-menu">
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+				</label>
+				<input type="radio" name="burger" id="burger" />
+				<nav class="header-nav">
+					<label class="burger-close" for="burger-close"></label>
+					<a href="catalog.html" class="header-nav__link">Каталог товаров</a>
+					<a href="#" class="header-nav__link">Доставка и оплата</a>
+					<a href="#" class="header-nav__link">Контакты</a>
+					<a href="articles.html" class="header-nav__link">Статьи</a>
+					<a href="news.html" class="header-nav__link">Новости</a>
+				</nav>
+			</div>
+			<div class="header-right">
+				<input type="radio" name="burger" id="burger-close" checked />
+				<div class="header-contact">
+					<div class="header-phone">
+						<p class="header-phone__label">Телефон:</p>
+						<p class="header-phone__number">8 (912) 123-45-67</p>
+					</div>
+					<div class="header-email">
+						<p class="header-email__label">Почта:</p>
+						<p onclick="window.location='mailto:info@gmail.com?subject=' + window.location.href;" class="header-email__number">
+							info@gmail.com
+						</p>
+					</div>
+					<button class="header-call">Обратный звонок</button>
+				</div>
+
+				<a href="basket.html" class="header-cart" data-amount="3">
+					<img src="img/cart.png" alt="cart" class="header-cart__img" />
+				</a>
+			</div>
+		</header>
+
+		<!-- Search  -->
+		<div class="search center">
+			<h1 class="heading">Стартеры для спецтехники</h1>
+			<p class="search-label">Введите каталожный номер стартера или название техники на которой он применяется</p>
+			<form action="search.html" class="search-form">
+				<input
+					class="search-form__input"
+					type="text"
+					name="search"
+					id="search"
+					placeholder="Введите каталожный номер VOE11423474 или L180F"
+				/>
+				<button type="submit" class="search-form__button">Поиск</button>
+			</form>
+		</div>
+
+		<!-- Bredcrumbs -->
+		<div class="bredcrumbs center">
+			<ul class="bredcrumbs__nav">
+				<li class="bredcrumbs__item">
+					<a href="index.html" class="bredcrumbs__link">Главная</a>
+				</li>
+				<li class="bredcrumbs__item">
+					<a href="#" class="bredcrumbs__link">Каталог стартеров для спецтехники</a>
+				</li>
+				<li class="bredcrumbs__item">
+					<a href="#" class="bredcrumbs__link">Стартер 2873К404</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Main -->
+		<main>
+			<div class="product center">
+				<h1 class="product-heading">Стартер 2873К404 для оборудования с двигателем Perkins</h1>
+				<div class="product-content">
+					<div class="product-info">
+						<div class="product-info__content">
+							<div class="product-img__box">
+								<img src="./img/product.png" alt="product" class="product-img__box-item" />
+								<div class="product-img__list">
+									<button class="product-img__list-button product-img__list-button_back"></button>
+									<img class="product-img__list-item product-img__list-item_active" src="./img/product.png" alt="product" />
+									<img class="product-img__list-item" src="./img/product.png" alt="product" />
+									<img class="product-img__list-item" src="./img/product.png" alt="product" />
+									<button class="product-img__list-button"></button>
+								</div>
+							</div>
+							<div class="product-desc">
+								<h2 class="product-desc__title">Характеристики стартера 2873К404</h2>
+								<div class="product-desc__item">
+									<p class="product-desc__item-name">Масса</p>
+									<p class="product-desc__item-value">4 кг</p>
+								</div>
+								<div class="product-desc__item">
+									<p class="product-desc__item-name">Напряжение</p>
+									<p class="product-desc__item-value">12 V</p>
+								</div>
+								<div class="product-desc__item">
+									<p class="product-desc__item-name">Мощность</p>
+									<p class="product-desc__item-value">3 kW</p>
+								</div>
+								<div class="product-desc__item">
+									<p class="product-desc__item-name">Кол-во зубьев на бендиксе</p>
+									<p class="product-desc__item-value">10 шт</p>
+								</div>
+								<div class="product-desc__item">
+									<p class="product-desc__item-name">Кол-во отверстий крепления</p>
+									<p class="product-desc__item-value">3 шт</p>
+								</div>
+
+								<ul class="product-desc__list">
+									<li class="product-desc__list-item">Наличие и актуальность цены уточняйте у менеджера.</li>
+									<li class="product-desc__list-item">Доставка по России и Снг транспортными компаниям.</li>
+									<li class="product-desc__list-item">До транспортной компании доставим сами и беслпатно.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="product-info__tabs">
+							<div id="tabs-title" class="product-info__tab-list">
+								<label for="desc" class="product-info__tab-title product-info__tab-title_active">Описание</label>
+								<label for="property" class="product-info__tab-title">Характеристики</label>
+								<label for="apply" class="product-info__tab-title">Применяемость</label>
+								<label for="mark" class="product-info__tab-title">Маркировки</label>
+							</div>
+							<div class="product-info__tabs-content">
+								<input type="radio" name="tab" id="desc" checked />
+								<div class="product-info__tab-content">
+									<h3 class="product-info__tab-heading">Описание стартера 2873К404</h3>
+									<p class="product-desc__text">
+										Стартер 2873К404 для экскаваторов, погрузчиков и т.д. с двигателем Perkins.
+									</p>
+								</div>
+
+								<input type="radio" name="tab" id="property" />
+								<div class="product-info__tab-content">
+									<div class="product-desc product-desc_fix">
+										<h2 class="product-info__tab-heading">Характеристики стартера 2873К404</h2>
+										<div class="product-desc__item">
+											<p class="product-desc__item-name">Масса</p>
+											<p class="product-desc__item-value">4 кг</p>
+										</div>
+										<div class="product-desc__item">
+											<p class="product-desc__item-name">Напряжение</p>
+											<p class="product-desc__item-value">12 V</p>
+										</div>
+										<div class="product-desc__item">
+											<p class="product-desc__item-name">Мощность</p>
+											<p class="product-desc__item-value">3 kW</p>
+										</div>
+										<div class="product-desc__item">
+											<p class="product-desc__item-name">Кол-во зубьев на бендиксе</p>
+											<p class="product-desc__item-value">10 шт</p>
+										</div>
+										<div class="product-desc__item">
+											<p class="product-desc__item-name">Кол-во отверстий крепления</p>
+											<p class="product-desc__item-value">3 шт</p>
+										</div>
+									</div>
+								</div>
+
+								<input type="radio" name="tab" id="apply" />
+								<div class="product-info__tab-content">
+									<h2 class="product-info__tab-heading">Применяемость стартера 2873К404</h2>
+									<div class="product-desc__apply">
+										<h4 class="product-desc__apply-title">Экскаваторы-погрузчики JCB:</h4>
+										<div class="product-desc__apply-list">
+											<div class="product-desc__apply-item">3CX</div>
+											<div class="product-desc__apply-item">4CX</div>
+										</div>
+
+										<h4 class="product-desc__apply-title">Экскаваторы-погрузчики Terex:</h4>
+										<div class="product-desc__apply-list">
+											<div class="product-desc__apply-item">840</div>
+											<div class="product-desc__apply-item">860</div>
+										</div>
+
+										<h4 class="product-desc__apply-title">Экскаваторы-погрузчики Hidromek:</h4>
+										<div class="product-desc__apply-list">
+											<div class="product-desc__apply-item">3CX</div>
+											<div class="product-desc__apply-item">4CX</div>
+										</div>
+									</div>
+								</div>
+
+								<input type="radio" name="tab" id="mark" />
+								<div class="product-info__tab-content">
+									<h2 class="product-info__tab-heading">Применяемость стартера 2873К404</h2>
+									<div class="product-desc__apply-list">
+										<a href="#" class="product-desc__apply-item">2873К404</a>
+										<a href="#" class="product-desc__apply-item">2873К632</a>
+										<a href="#" class="product-desc__apply-item">2873К601</a>
+										<a href="#" class="product-desc__apply-item">2873К588</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="hr" />
+
+						<div class="product-take">
+							<div class="product-take__title">С этим товаром часто берут</div>
+							<div class="product-take__content">
+								<button class="product-take__btn product-take__btn_back"></button>
+								<div class="product-take__cards">
+									<div class="card-product">
+										<div class="product-header">
+											<img class="product-img" src="./img/product-card-img.png" alt="product-img" />
+											<div class="product-header__slide-buttons">
+												<span class="product-header__slide-button product-header__slide-button_active"></span>
+												<span class="product-header__slide-button"></span>
+												<span class="product-header__slide-button"></span>
+											</div>
+										</div>
+										<a href="product.html" class="product-body">
+											<h2 class="product-title">Стартер 2873К404</h2>
+											<div class="product-desc">
+												<p class="product-desc__name">
+													Масса:
+													<span class="product-desc__value">4 кг</span>
+												</p>
+												<p class="product-desc__name">
+													Напряжение:
+													<span class="product-desc__value">12 v</span>
+												</p>
+												<p class="product-desc__name">
+													Мощность:
+													<span class="product-desc__value">3 kw</span>
+												</p>
+											</div>
+										</a>
+										<div class="product-footer">
+											<div class="product-price">от 28 900 ₽</div>
+											<div class="product-button">Ещё варианты</div>
+										</div>
+									</div>
+									<div class="card-product">
+										<div class="product-header">
+											<img class="product-img" src="./img/product-card-img.png" alt="product-img" />
+											<div class="product-header__slide-buttons">
+												<span class="product-header__slide-button product-header__slide-button_active"></span>
+												<span class="product-header__slide-button"></span>
+												<span class="product-header__slide-button"></span>
+											</div>
+										</div>
+										<a href="product.html" class="product-body">
+											<h2 class="product-title">Стартер 2873К404</h2>
+											<div class="product-desc">
+												<p class="product-desc__name">
+													Масса:
+													<span class="product-desc__value">4 кг</span>
+												</p>
+												<p class="product-desc__name">
+													Напряжение:
+													<span class="product-desc__value">12 v</span>
+												</p>
+												<p class="product-desc__name">
+													Мощность:
+													<span class="product-desc__value">3 kw</span>
+												</p>
+											</div>
+										</a>
+										<div class="product-footer">
+											<div class="product-price">от 28 900 ₽</div>
+											<div class="product-button">Ещё варианты</div>
+										</div>
+									</div>
+									<div class="card-product">
+										<div class="product-header">
+											<img class="product-img" src="./img/product-card-img.png" alt="product-img" />
+											<div class="product-header__slide-buttons">
+												<span class="product-header__slide-button product-header__slide-button_active"></span>
+												<span class="product-header__slide-button"></span>
+												<span class="product-header__slide-button"></span>
+											</div>
+										</div>
+										<a href="product.html" class="product-body">
+											<h2 class="product-title">Стартер 2873К404</h2>
+											<div class="product-desc">
+												<p class="product-desc__name">
+													Масса:
+													<span class="product-desc__value">4 кг</span>
+												</p>
+												<p class="product-desc__name">
+													Напряжение:
+													<span class="product-desc__value">12 v</span>
+												</p>
+												<p class="product-desc__name">
+													Мощность:
+													<span class="product-desc__value">3 kw</span>
+												</p>
+											</div>
+										</a>
+										<div class="product-footer">
+											<div class="product-price">от 28 900 ₽</div>
+											<div class="product-button">Ещё варианты</div>
+										</div>
+									</div>
+								</div>
+								<button class="product-take__btn"></button>
+							</div>
+						</div>
+					</div>
+
+					<div id="product-aside" class="product-aside">
+						<div class="product-aside__price">
+							<div class="product-aside__price-item">
+								<h4 class="product-aside__title">Holset</h4>
+								<div class="product-aside__price-value">21 600 руб. <span>цена с НДС</span></div>
+								<div class="product-aside__amount">
+									<div class="basket-body__amount">
+										<span class="basket-body__amount-minus basket-body__amount-minus_disabled"></span>
+										<span class="basket-body__amount-value">0</span>
+										<span class="basket-body__amount-plus"></span>
+									</div>
+									<button class="product-aside__btn-cart">В корзину</button>
+								</div>
+
+								<button class="product-aside__btn-buy">Купить стартер в один клик</button>
+							</div>
+
+							<div class="product-aside__price-item">
+								<h4 class="product-aside__title">Lester</h4>
+								<div class="product-aside__price-value">16 800 руб. <span>цена с НДС</span></div>
+								<div class="product-aside__amount">
+									<div class="basket-body__amount">
+										<span class="basket-body__amount-minus"></span>
+										<span class="basket-body__amount-value">2</span>
+										<span class="basket-body__amount-plus"></span>
+									</div>
+									<button class="product-aside__btn-cart">В корзину</button>
+								</div>
+
+								<button class="product-aside__btn-buy">Купить стартер в один клик</button>
+							</div>
+
+							<div class="product-aside__price-item">
+								<h4 class="product-aside__title">Pipsner</h4>
+								<div class="product-aside__price-value">19 200 руб. <span>цена с НДС</span></div>
+								<div class="product-aside__amount">
+									<div class="basket-body__amount">
+										<span class="basket-body__amount-minus basket-body__amount-minus_disabled"></span>
+										<span class="basket-body__amount-value">0</span>
+										<span class="basket-body__amount-plus"></span>
+									</div>
+									<button class="product-aside__btn-cart">В корзину</button>
+								</div>
+
+								<button class="product-aside__btn-buy">Купить стартер в один клик</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Partners -->
+		<div class="partners center">
+			<h2 class="partners-title">
+				Сайты наших партнёров <br />
+				по запчастям для спецтехники
+			</h2>
+			<div class="partners-content">
+				<a href="#" class="partners-item partners-item_pink">
+					<img src="img/hydro_pump_full.png" alt="pump" class="partners-img" />
+					<div class="partners-text">Гидронасосы <br />и гидромоторы PSM</div>
+					<button class="partners-button"></button>
+				</a>
+				<a href="#" class="partners-item partners-item_green">
+					<img src="img/generator_full.png" alt="generator" class="partners-img" />
+					<div class="partners-text">Генераторы<br />для спецтехники</div>
+					<button class="partners-button"></button>
+				</a>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-content center">
+				<ul class="footer-nav">
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+				</ul>
+				<div class="footer-contact">
+					<div class="footer-contact__phone">
+						<p class="footer-contact__phone-label">Телефон:</p>
+						<p class="footer-contact__phone-number">8 (912) 123-45-67</p>
+					</div>
+					<div class="footer-contact__email">
+						<p class="footer-contact__email-label">Почта:</p>
+						<p
+							onclick="window.location='mailto:info@gmail.com?subject=' + window.location.href;"
+							class="footer-contact__email-address"
+						>
+							info@gmail.com
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">«Название компании». 2020 Все права защищены.</div>
+		</footer>
+
+		<!-- modal -->
+		<div id="modal" class="modal">
+			<div id="buy" class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Купить в 1 клик</h3>
+					<button onclick="closeModal()" class="modal-close"><span></span></button>
+				</div>
+				<hr class="hr" />
+				<div class="modal-body">
+					<div class="modal-body__content">
+						<h3 class="modal-name">Стартер 2873К404</h3>
+						<div class="modal-amount">
+							<span class="modal-amount__minus modal-amount__minus_disabled"></span>
+							<span class="modal-amount__value">1 шт</span>
+							<span class="modal-amount__plus"></span>
+						</div>
+					</div>
+					<hr class="hr" />
+					<form class="form" action="#">
+						<label class="form-label" for="">
+							Ваше имя<br />
+							<input class="form-input" type="text" name="name" id="name" placeholder="Константин" />
+						</label>
+						<label class="form-label" for="">
+							Ваше телефон<br />
+							<input class="form-input" type="tel" name="phone" id="phone" placeholder="+7 (912) 123-12-31" />
+						</label>
+					</form>
+				</div>
+				<hr class="hr" />
+				<div class="modal-footer">
+					<input type="checkbox" name="policy" id="policy" />
+					<span class="policy-text"
+						>Отправляя данные, вы соглашаетесь с
+						<a class="policy-link" href="#"> политикой конфиденциальности</a>
+					</span>
+					<button type="submit" class="policy-button">Отправить</button>
+				</div>
+			</div>
+
+			<div id="call" class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<button onclick="closeModal()" class="modal-close"><span></span></button>
+				</div>
+				<hr class="hr" />
+				<div class="modal-body">
+					<div class="modal-body__content">
+						Заполните форму обратного звонка и в течение
+15 минут с вами свяжется наш менеджер.
+					</div>
+					<hr class="hr" />
+					<form class="form" action="#">
+						<label class="form-label" for="">
+							Ваше имя<br />
+							<input class="form-input" type="text" name="name" id="call-name" placeholder="Константин" />
+						</label>
+						<label class="form-label" for="">
+							Ваше телефон<br />
+							<input class="form-input" type="tel" name="phone" id="call-phone" placeholder="+7 (912) 123-12-31" />
+						</label>
+					</form>
+				</div>
+				<hr class="hr" />
+				<div class="modal-footer">
+					<input type="checkbox" name="policy" id="policy" />
+					<span class="policy-text"
+						>Отправляя данные, вы соглашаетесь с
+						<a class="policy-link" href="#"> политикой конфиденциальности</a>
+					</span>
+					<button type="submit" class="policy-button">Отправить</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			/* open close modal */
+			document.addEventListener('click', openModal);
+			let modal = document.getElementById('modal');
+			function openModal(e) {
+				console.dir('Open Modal');
+				if (e.target.classList.contains('product-aside__btn-buy')) {
+					modal.style.left = 0;
+					modal.style.right = 0;
+					modal.children[0].style.opacity = 1;
+				}
+
+				if (e.target.classList.contains('header-call')) {
+					modal.style.left = 0;
+					modal.style.right = 0;
+					modal.children[1].style.opacity = 1;
+				}
+			}
+
+			function closeModal() {
+				console.dir('Close Modal');
+				modal.style.left = '-9999px';
+				modal.style.right = '9999px';
+				modal.children[0].style.opacity = 0;
+				modal.children[1].style.opacity = 0;
+			}
+			/* open close modal end */
+
+			/* tabs switch active */
+			let tabs = document.getElementById('tabs-title');
+
+			tabs.addEventListener('click', (e) => {
+				console.log(tabs.children.length);
+				for (var i = 0, child; (child = tabs.children[i]); i++) {
+					child.classList.remove('product-info__tab-title_active');
+				}
+
+				e.target.classList.add('product-info__tab-title_active');
+			});
+			/* tabs switch active end */
+			// -------------------------------------------------------
+			const mediaQuery = window.matchMedia('(min-width: 991px)');
+			const inputBurger = document.getElementById('burger');
+
+			function closeBurgerMenu(e) {
+				if (e.matches) {
+					console.log('Media Query Matched!');
+					inputBurger.checked = false;
+				}
+			}
+
+			mediaQuery.addListener(closeBurgerMenu);
+			closeBurgerMenu(mediaQuery);
+		</script>
+	</body>
+</html>

@@ -190,6 +190,7 @@
 		padding: 10px 15px;
 		&::after {
 			content: url(../img/svg/arrow_right.svg);
+			fill: #ffffff;
 			transform: rotate(180deg) scale(1.3);
 		}
 	}

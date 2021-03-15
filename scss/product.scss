@@ -1,9 +1,11 @@
 @import 'share-style';
 @import 'header';
 @import 'search';
-@import 'banner';
-@import 'advantage';
-@import 'news';
-@import 'articles';
+@import 'bredcrumbs';
+@import 'product-main';
 @import 'partners';
 @import 'footer';
+
+.partners{
+	background: #F3F7FA;
+}

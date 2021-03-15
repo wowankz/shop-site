@@ -36,7 +36,9 @@
 					</div>
 					<div class="header-email">
 						<p class="header-email__label">Почта:</p>
-						<p class="header-email__number">info@gmail.com</p>
+						<p 
+						onclick="window.location='mailto:info@gmail.com?subject=' + window.location.href;" 
+						class="header-email__number">info@gmail.com</p>
 					</div>
 					<button class="header-call">Обратный звонок</button>
 				</div>
@@ -275,14 +277,117 @@
 					</div>
 					<div class="footer-contact__email">
 						<p class="footer-contact__email-label">Почта:</p>
-						<p class="footer-contact__email-address">info@gmail.com</p>
+						<p 
+						onclick="window.location='mailto:info@gmail.com?subject=' + window.location.href;" 
+						class="footer-contact__email-address">info@gmail.com</p>
 					</div>
 				</div>
 			</div>
 			<div class="footer-copyright">«Название компании». 2020 Все права защищены.</div>
 		</footer>
 
+		<!-- modal -->
+		<div id="modal" class="modal">
+			<div id="buy" class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Купить в 1 клик</h3>
+					<button onclick="closeModal()" class="modal-close"><span></span></button>
+				</div>
+				<hr class="hr" />
+				<div class="modal-body">
+					<div class="modal-body__content">
+						<h3 class="modal-name">Стартер 2873К404</h3>
+						<div class="modal-amount">
+							<span class="modal-amount__minus modal-amount__minus_disabled"></span>
+							<span class="modal-amount__value">1 шт</span>
+							<span class="modal-amount__plus"></span>
+						</div>
+					</div>
+					<hr class="hr" />
+					<form class="form" action="#">
+						<label class="form-label" for="">
+							Ваше имя<br />
+							<input class="form-input" type="text" name="name" id="name" placeholder="Константин" />
+						</label>
+						<label class="form-label" for="">
+							Ваше телефон<br />
+							<input class="form-input" type="tel" name="phone" id="phone" placeholder="+7 (912) 123-12-31" />
+						</label>
+					</form>
+				</div>
+				<hr class="hr" />
+				<div class="modal-footer">
+					<input type="checkbox" name="policy" id="policy" />
+					<span class="policy-text"
+						>Отправляя данные, вы соглашаетесь с
+						<a class="policy-link" href="#"> политикой конфиденциальности</a>
+					</span>
+					<button type="submit" class="policy-button">Отправить</button>
+				</div>
+			</div>
+
+			<div id="call" class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<button onclick="closeModal()" class="modal-close"><span></span></button>
+				</div>
+				<hr class="hr" />
+				<div class="modal-body">
+					<div class="modal-body__content">
+						Заполните форму обратного звонка и в течение
+15 минут с вами свяжется наш менеджер.
+					</div>
+					<hr class="hr" />
+					<form class="form" action="#">
+						<label class="form-label" for="">
+							Ваше имя<br />
+							<input class="form-input" type="text" name="name" id="call-name" placeholder="Константин" />
+						</label>
+						<label class="form-label" for="">
+							Ваше телефон<br />
+							<input class="form-input" type="tel" name="phone" id="call-phone" placeholder="+7 (912) 123-12-31" />
+						</label>
+					</form>
+				</div>
+				<hr class="hr" />
+				<div class="modal-footer">
+					<input type="checkbox" name="policy" id="policy" />
+					<span class="policy-text"
+						>Отправляя данные, вы соглашаетесь с
+						<a class="policy-link" href="#"> политикой конфиденциальности</a>
+					</span>
+					<button type="submit" class="policy-button">Отправить</button>
+				</div>
+			</div>
+		</div>
+
 		<script>
+			/* open close modal */
+			document.addEventListener('click', openModal);
+			let modal = document.getElementById('modal');
+			function openModal(e) {
+				console.dir('Open Modal');
+				if (e.target.classList.contains('product-aside__btn-buy')) {
+					modal.style.left = 0;
+					modal.style.right = 0;
+					modal.children[0].style.opacity = 1;
+				}
+
+				if (e.target.classList.contains('header-call')) {
+					modal.style.left = 0;
+					modal.style.right = 0;
+					modal.children[1].style.opacity = 1;
+				}
+			}
+
+			function closeModal() {
+				console.dir('Close Modal');
+				modal.style.left = '-9999px';
+				modal.style.right = '9999px';
+				modal.children[0].style.opacity = 0;
+				modal.children[1].style.opacity = 0;
+			}
+			/* open close modal end */
 			const mediaQuery = window.matchMedia('(min-width: 991px)');
 			const inputBurger = document.getElementById('burger');
 

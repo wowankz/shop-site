@@ -1,6 +1,9 @@
 .bredcrumbs {
 	display: flex;
 margin-bottom: 30px;
+     @media (max-width: 649.98px) {
+		display: none;
+	}
 	&__nav {
 		display: flex;
 		justify-content: center;
