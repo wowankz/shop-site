@@ -40,6 +40,9 @@
 			color: #ffbb32;
 			font-size: 4vh;
 			padding: 2.2vh 0;
+			@media (max-height: 650px) {
+		padding: 1.5vh 0;
+	}
 		}
 		& > .burger-close {
 			display: flex;
@@ -105,6 +108,20 @@
 	&:after {
 		transform: rotate(-45deg);
 	}
+
+	@media (max-height: 565px) {
+			width: 10vh;
+			height: 10vh;
+			&:before,
+	&:after {
+		content: '';
+		top: 4vh;
+		left: 0.5vh;
+		width: 8vh;
+		height: 5px;
+		
+	}
+		}
 }
 .header-nav {
 	display: flex;
@@ -176,6 +193,10 @@
 		flex-wrap: wrap;
 		align-items: center;
 		z-index: 10000;
+	}
+
+	@media (max-height: 650px) {
+		height: 40vh;
 	}
 }
 .header-phone {
@@ -265,6 +286,11 @@
 		line-height: 28px;
 		padding: 20px;
 		margin: 5px;
+	}
+
+	@media (max-height: 650px) {
+		padding: 1.5vh;
+		
 	}
 }
 .header-cart {

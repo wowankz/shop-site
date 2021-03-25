@@ -84,6 +84,9 @@
 	&__tabs-content {
 		padding-top: 30px;
 		padding-bottom: 90px;
+		@media (max-width: 575.98px) {
+			width: 94vw;
+		}
 	}
 
 	&__tab-content {
@@ -162,6 +165,9 @@
 .product-desc {
 	&_fix {
 		width: 361px;
+		@media (max-width: 575.98px) {
+			width: 94vw;
+		}
 	}
 	&__title {
 		font-size: 18px;
@@ -219,6 +225,8 @@
 
 	&__apply-list {
 		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 10px;
 	}
 
 	&__apply-item {

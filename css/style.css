@@ -473,6 +473,12 @@ button:active {
   padding: 2.2vh 0;
 }
 
+@media (max-height: 650px) {
+  #burger:checked + .header-nav > .header-nav__link {
+    padding: 1.5vh 0;
+  }
+}
+
 #burger:checked + .header-nav > .burger-close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,6 +571,20 @@ button:active {
 .burger-close:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@media (max-height: 565px) {
+  .burger-close {
+    width: 10vh;
+    height: 10vh;
+  }
+  .burger-close:before, .burger-close:after {
+    content: '';
+    top: 4vh;
+    left: 0.5vh;
+    width: 8vh;
+    height: 5px;
+  }
 }
 
 .header-nav {
@@ -701,6 +721,12 @@ button:active {
   }
 }
 
+@media (max-height: 650px) {
+  .header-contact {
+    height: 40vh;
+  }
+}
+
 .header-phone {
   padding-right: 25px;
 }
@@ -799,6 +825,12 @@ button:active {
     line-height: 28px;
     padding: 20px;
     margin: 5px;
+  }
+}
+
+@media (max-height: 650px) {
+  .header-call {
+    padding: 1.5vh;
   }
 }
 
@@ -1677,6 +1709,14 @@ button:active {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-right: 5px;
+}
+
+@media (max-width: 340px) {
+  .partners-button::after {
+    height: 2vw;
+    width: 2vw;
+    margin-right: 1vw;
+  }
 }
 
 @media (max-width: 1180px) {
